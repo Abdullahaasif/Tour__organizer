@@ -1,0 +1,107 @@
+.about {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    padding: 5rem;
+    &__heading {
+        color: #000;
+        font-size: 5rem;
+        letter-spacing: 0.3rem;
+        font-weight: 400;
+        text-align: center;
+        span {
+            color: rgb(173, 173, 173);
+            font-weight: 300;
+        }
+    }
+
+    &__pic {
+        width: 40%;
+        height: 100%;
+        // margin-top: 2rem;
+        margin-left: 3rem;
+    }
+    &__content {
+        display: flex;
+        padding: 3rem 0;
+        margin-top: 6rem;
+        text-align: left;
+        margin-left: 5rem;
+        line-height: 3rem;
+        &--heading-1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        &--para {
+            font-size: 1.5rem;
+        }
+        &--para-1 {
+            font-size: 1.5rem;
+            margin-top: 3rem;
+        }
+        &--btn {
+            width: 18rem;
+            margin-top: 2rem;
+            background-color: transparent;
+            background-color: rgb(180, 180, 180);
+            height: 6rem;
+            color: #fff;
+            opacity: 0.9;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+            border-radius: 5px;
+            letter-spacing: 0.4rem;
+            padding: 1rem;
+            position: relative;
+            border: none;
+            &:hover {
+                border: none;
+                opacity: 1;
+            }
+        }
+    }
+    &__content-1 {
+        margin-left: 7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        &__pic {
+            width: 50%;
+            height: 80%;
+            margin-left: 0;
+        }
+        &__content {
+            
+            &--para-1 {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:480px){
+    .about{
+        height: 150vh;
+      
+        &__content{
+            flex-wrap: wrap;
+            &--para{
+                width: 112%;
+                font-style: 1.5rem;
+            }
+        }
+        &__content-1{
+            margin-left: 0;
+            padding: 3rem;
+        }
+        &__pic{
+            width: 136%;
+            margin-left: -84px;
+        
+        }
+    }
+}
+

@@ -1,0 +1,54 @@
+.header__nav {
+    display: flex;
+    height: 6rem;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+    z-index: 2000;
+    
+
+    &--link {
+        display: flex;
+        font-size: 2rem;
+        font-family: "Roboto", sans-serif;
+        align-items: center;
+        justify-content: space-around;
+        font-weight: 400;
+    }
+    i {
+        font-size: 3rem;
+        padding: 2rem 2rem;
+        color: rgb(168, 168, 168);
+        transition: all 0.2s ease-in-out;
+        position: relative;
+
+        &:hover {
+            color: #000;
+            cursor: pointer;
+        }
+    }
+    a {
+        color: #000;
+        letter-spacing: 0.2rem;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: rgb(168, 168, 168);
+            
+            
+        }
+    }
+    &--item {
+        padding: 2rem;
+    }
+}
+.logo {
+    padding: 1rem;
+
+    &__img {
+        width: 8\7rem;
+
+        height: 100%;
+    }
+}
+

@@ -1,0 +1,108 @@
+.header {
+    background-image:linear-gradient(to left bottom rgba(255, 255, 255, 0.315),rgba(255, 255, 255, 0.13)), url(../img/qingbao-meng-01_igFr7hd4-unsplash.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+
+    &__content {
+        text-align: center;
+        margin-top: 16rem;
+        
+    }
+    &__heading {
+        align-items: center;
+        color: #fff;
+        font-size: 8rem;
+        font-weight: 600;
+        letter-spacing: .5rem;
+        margin-bottom: 3rem;
+        animation: text 2s;
+        
+        
+    }
+    &__para{
+        color: #fff;
+        margin-bottom: 3rem;
+        letter-spacing: .5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 3rem;animation: text1 2s;
+    }
+    &__btn{
+        width: 18rem;
+        background-color: transparent;
+        border: .2rem solid #fff;
+        height: 6rem;
+        color: #fff;
+        font-weight: 600;
+        transition: all .2s ease-in-out;
+        border-radius: 5px;
+        letter-spacing: .4rem;
+        padding: 1rem ;
+        position: relative;
+        animation:btn 2s;
+        &:hover{
+            color: #000;
+            background-color: #fff;
+            border: none;
+        }
+        
+    }
+}
+@keyframes text {
+    0%{
+         transform: scale(0);
+        
+        
+    }
+    100%{
+         transform: scale(1);
+        
+    }
+    
+}
+@keyframes text1 {
+    0%{
+         transform: scale(0);
+        
+        
+    }
+    100%{
+         transform: scale(1);
+        
+    }
+    
+}
+@keyframes btn{
+    0%{
+        bottom: -100%;
+        opacity: 0;
+   
+    }
+    50%{
+        bottom: -50%;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+    
+}
+
+
+@media (max-width:768px){
+    .header__nav{
+        display: none;
+    }
+    .header{
+        &__heading{
+            font-size: 4rem;
+        }
+        &__para{
+            font-size: 1.5rem;
+        }
+    }
+    
+}

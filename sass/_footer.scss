@@ -1,0 +1,100 @@
+.footer {
+    background-color: #fff;
+    height: 80vh;
+    .f {
+        margin-top: 5rem;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+        &-btn {
+            width: 50rem;
+            height: 5rem;
+            background-color: transparent;
+            border: 0.1rem solid #000;
+            color: rgb(173, 173, 173);
+        }
+        &-btn-2 {
+            width: 10rem;
+            height: 5rem;
+            background-color: transparent;
+            border: 0.1rem solid #000;
+            color: rgb(173, 173, 173);
+            &:hover {
+                background-color: rgb(173, 173, 173);
+                color: #fff;
+                border: none;
+            }
+        }
+    }
+    &__section {
+        height: 60vh;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20rem;
+        &-heading {
+            color: #fff;
+            font-size: 2rem;
+            // margin: 10rem;
+            font-weight: 400;
+            margin-top: 2rem;
+        }
+    }
+    &__nav {
+        display: flex;
+        height: 6rem;
+        background-color: rgb(0, 0, 0);
+        justify-content: space-between;
+        top: 0;
+        position: sticky;
+        flex-direction: column;
+        z-index: 2000;
+
+        &--link {
+            display: flex;
+            font-size: 2rem;
+            font-family: "Roboto", sans-serif;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-weight: 400;
+        }
+        i {
+            font-size: 3rem;
+            padding: 2rem 2rem;
+            color: rgb(168, 168, 168);
+        }
+        a {
+            color: rgb(255, 255, 255);
+            letter-spacing: 0.2rem;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                color: rgb(255, 255, 255);
+            }
+        }
+        &--item {
+            padding: 2rem;
+        }
+        &--icon {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+    }
+    input::placeholder {
+        padding: 1rem;
+    }
+}
+
+@media (max-width:480px){
+    .footer__section{
+        &-heading{
+            display: none;
+        }
+    }
+}
